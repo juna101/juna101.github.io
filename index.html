@@ -11,10 +11,18 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Creamos una barra de navegación con fondo oscuro -->
-    <nav class="navbar navbar-dark bg-dark">
+    <!-- Creamos una barra de navegación con fondo oscuro.
+    La clase "navbar-expand-lg" sirve para que el menú se vea compacto
+    en un móvil pero completo en PC -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- Ponemos título a la barra de navegación -->
-        <a class="navbar-brand" href="#">Juna101</a>
+        <a class="navbar-brand" href="#">
+            <!-- Añadimos imagen de github a la barra de menú -->
+            <img src="https://avatars.githubusercontent.com/u/57001190?s=460&v=4" 
+                class="d-inline-block align-top"
+                height="30" width="30" />
+            Juna101
+        </a>
         <!-- botón para desplegar el menú en modo responsivo -->
         <button class="navbar-toggler" type="button" 
             data-toggle="collapse" data-target="#entradas_menu">
@@ -25,7 +33,26 @@
         fíjate que el ID coincida con el data-target del 
         botón de arriba -->
         <div class="collapse navbar-collapse" id="entradas_menu">
-
+            <!-- Los menús se hacen con listas -->
+            <ul class="navbar-nav">
+                <!-- Cada elemento de la lista es una entrada del menú -->
+                <li class="nav-item">
+                    <!-- El enlace con el título al que lleva el menú -->
+                    <a class="nav-link" href="#" id="menu_inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_web">Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_java">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_base_de_datos">Bases de datos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_contacto">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container">        
@@ -42,7 +69,7 @@
             <p>Bases de Datos</p>
         </div>
         <div id="panel_contacto" class="panel">
-            <p>contacto</p>
+            <p>Contacto</p>
         </div>       
     </div>
 
