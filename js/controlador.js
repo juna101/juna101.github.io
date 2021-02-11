@@ -22,8 +22,8 @@ $.controller.panel_inicial = "";
  */
 $.controller.activate = function (panel_name) {
     // console.log("cambio old::"+$.controller.active_panel+" new::"+panel_name);
-    $($.controller.active_panel).hide();
-    $(panel_name).show();
+    $($.controller.active_panel).hide(1000);
+    $(panel_name).show(1000);
     $.controller.active_panel = panel_name;
 };
 
