@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resumen - Redes Locales</title>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Juna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="montaje.html">Montaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemas.html">SO Monopuesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofimatica.html">Ofimática</a></li>
+                    <li class="nav-item"><a class="nav-link" href="redes.html">Redes Locales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="red_sistemas.html">SO en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguridad.html">Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web.html">Aplicaciones Web</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menú navegación -->
+
+    <header>
+        <h1>Módulo: Redes Locales</h1>
+        <p><strong>Código:</strong> 0014 (Orden 7 julio 2009, Junta de Andalucía)</p>
+    </header>
+    <h2>📌 Modelos de Red</h2>
+
+    <div class="model-container">
+        <div class="model-box osi">
+            <h3>Modelo OSI (7 capas)</h3>
+            <table class="layer-table">
+                <tr>
+                    <th>Capa</th>
+                    <th>Función</th>
+                    <th>Ejemplos</th>
+                </tr>
+                <tr>
+                    <td>7. Aplicación</td>
+                    <td>Interfaz usuario-red</td>
+                    <td>HTTP, FTP, SMTP</td>
+                </tr>
+                <tr>
+                    <td>6. Presentación</td>
+                    <td>Traducción/criptografía</td>
+                    <td>SSL, JPEG</td>
+                </tr>
+                <tr>
+                    <td>5. Sesión</td>
+                    <td>Control diálogo</td>
+                    <td>NetBIOS, RPC</td>
+                </tr>
+                <tr>
+                    <td>4. Transporte</td>
+                    <td>Control flujo/errores</td>
+                    <td>TCP, UDP</td>
+                </tr>
+                <tr>
+                    <td>3. Red</td>
+                    <td>Enrutamiento</td>
+                    <td>IP, ICMP</td>
+                </tr>
+                <tr>
+                    <td>2. Enlace</td>
+                    <td>Direccionamiento físico</td>
+                    <td>MAC, Ethernet</td>
+                </tr>
+                <tr>
+                    <td>1. Física</td>
+                    <td>Transmisión bits</td>
+                    <td>Cables, señales</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="model-box tcpip">
+            <h3>Pila TCP/IP (4 capas)</h3>
+            <table class="layer-table">
+                <tr>
+                    <th>Capa</th>
+                    <th>Equivalente OSI</th>
+                    <th>Protocolos</th>
+                </tr>
+                <tr>
+                    <td>Aplicación</td>
+                    <td>5-7</td>
+                    <td>HTTP, FTP, DNS</td>
+                </tr>
+                <tr>
+                    <td>Transporte</td>
+                    <td>4</td>
+                    <td>TCP, UDP</td>
+                </tr>
+                <tr>
+                    <td>Internet</td>
+                    <td>3</td>
+                    <td>IP, ICMP</td>
+                </tr>
+                <tr>
+                    <td>Acceso Red</td>
+                    <td>1-2</td>
+                    <td>Ethernet, WiFi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="cableado-section">
+        <h2>🔌 Cableado Estructurado</h2>
+        <ul>
+            <li><strong>Normativa TIA/EIA-568</strong> para instalaciones</li>
+            <li><strong>Categorías de cable UTP</strong> (Cat5e, Cat6, Cat6a)</li>
+            <li><strong>Tipos de cable</strong>: UTP, STP, fibra óptica</li>
+            <li><strong>Patch panels</strong> y rosetas RJ45</li>
+            <li><strong>Normas de tendido</strong> (distancias, curvaturas)</li>
+            <li><strong>Herramientas</strong>: crimpadora, tester, ponchadora</li>
+            <li><strong>Estándares T568A/T568B</strong> para conectores</li>
+        </ul>
+    </div>
+
+    <div class="protocol-box">
+        <h2>⚙️ Protocolos y Elementos de Red</h2>
+        <ul>
+            <li><strong>Dispositivos</strong>: Hubs, switches, routers</li>
+            <li><strong>Direccionamiento IP</strong> (IPv4, subredes, NAT)</li>
+            <li><strong>Protocolos</strong>: DHCP, DNS, ARP, ICMP</li>
+            <li><strong>Topologías</strong>: Estrella, anillo, bus, malla</li>
+            <li><strong>Medios de transmisión</strong>: Cableado, WiFi, fibra</li>
+            <li><strong>Seguridad básica</strong>: Firewalls, filtrado MAC</li>
+        </ul>
+    </div>
+
+    <div class="vlan-section">
+        <h2>🔀 VLANs (Redes Virtuales)</h2>
+        <ul>
+            <li><strong>Concepto</strong>: Segmentación lógica de redes</li>
+            <li><strong>Tipos</strong>: Port-based, tag-based (802.1Q)</li>
+            <li><strong>Ventajas</strong>: Seguridad, rendimiento, organización</li>
+            <li><strong>Trunking</strong> entre switches</li>
+            <li><strong>Configuración básica</strong> en switches</li>
+            <li><strong>VLAN nativa</strong> y gestión</li>
+        </ul>
+    </div>
+
+    <div class="highlight">
+        <h2>💡 Habilidades adquiridas</h2>
+        <div>
+            <p>✅ Diseñar infraestructuras de red básicas</p>
+            <p>✅ Cablear y conectar dispositivos correctamente</p>
+            <p>✅ Configurar switches y VLANs</p>
+            <p>✅ Diagnosticar problemas de conectividad</p>
+            <p>✅ Diferenciar modelos OSI y TCP/IP</p>
+            <p>✅ Implementar medidas de seguridad básicas</p>
+        </div>
+    </div>
+
+    <p><em>Este módulo es fundamental para los módulos avanzados como <strong>Servicios en Red</strong> y
+            <strong>Seguridad Informática</strong>, y proporciona la base para certificaciones como CCNA.</em></p>
+</body>
+
+</html>

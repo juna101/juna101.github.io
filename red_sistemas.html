@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen - Sistemas Operativos en Red</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 35px;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        h3 {
+            color: #16a085;
+            margin-top: 25px;
+        }
+
+        .content-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid;
+        }
+
+        .windows {
+            border-left-color: #3498db;
+        }
+
+        .linux {
+            border-left-color: #27ae60;
+        }
+
+        .protocols {
+            border-left-color: #e74c3c;
+        }
+
+        .security {
+            border-left-color: #f39c12;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .skills-section {
+            background-color: #e8f4fc;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Juna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="montaje.html">Montaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemas.html">SO Monopuesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofimatica.html">Ofimática</a></li>
+                    <li class="nav-item"><a class="nav-link" href="redes.html">Redes Locales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="red_sistemas.html">SO en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguridad.html">Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web.html">Aplicaciones Web</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menú navegación -->
+
+    <header>
+        <h1>Módulo: Sistemas Operativos en Red</h1>
+        <p><strong>Código:</strong> 0020 (Orden 7 julio 2009, Junta de Andalucía)</p>
+    </header>
+
+    <div class="content-box windows">
+        <h2>🖥️ Administración de Servidores Windows</h2>
+        <h3>Active Directory (AD)</h3>
+        <ul>
+            <li>Instalación y configuración de Controlador de Dominio</li>
+            <li>Creación y gestión de usuarios/grupos</li>
+            <li>Políticas de Grupo (GPO)</li>
+            <li>Delegación de permisos</li>
+            <li>Estructura de dominios y bosques</li>
+        </ul>
+
+        <h3>Compartición de Recursos</h3>
+        <ul>
+            <li>Configuración de carpetas compartidas</li>
+            <li>Permisos NTFS vs permisos de compartir</li>
+            <li>Acceso a recursos de red (mapeo de unidades)</li>
+            <li>Impresoras en red</li>
+        </ul>
+    </div>
+
+    <div class="content-box linux">
+        <h2>🐧 Administración de Servidores Linux</h2>
+        <h3>Servicios de Directorio</h3>
+        <ul>
+            <li>Configuración de OpenLDAP</li>
+            <li>Autenticación centralizada</li>
+            <li>Integración con clientes Windows/Linux</li>
+            <li>Herramientas gráficas (phpLDAPadmin)</li>
+        </ul>
+
+        <h3>Samba</h3>
+        <ul>
+            <li>Compartición de archivos con Windows</li>
+            <li>Configuración de smb.conf</li>
+            <li>Permisos y autenticación</li>
+            <li>Dominio Samba como PDC</li>
+        </ul>
+
+        <h3>NFS</h3>
+        <ul>
+            <li>Exportación de directorios</li>
+            <li>Montaje automático (autofs)</li>
+            <li>Seguridad y permisos</li>
+        </ul>
+    </div>
+
+    <div class="grid-container">
+        <div class="content-box protocols">
+            <h2>🔗 Protocolos de Red</h2>
+            <ul>
+                <li><strong>DNS</strong>: Resolución de nombres, zonas, registros</li>
+                <li><strong>DHCP</strong>: Asignación dinámica de IPs, reservas</li>
+                <li><strong>FTP/SFTP</strong>: Transferencia de archivos</li>
+                <li><strong>SSH</strong>: Acceso remoto seguro</li>
+                <li><strong>HTTP/HTTPS</strong>: Servicios web básicos</li>
+            </ul>
+        </div>
+
+        <div class="content-box security">
+            <h2>🔒 Seguridad Básica</h2>
+            <ul>
+                <li>Administración de cuentas y contraseñas</li>
+                <li>Certificados digitales básicos</li>
+                <li>Firewalls básicos (Windows Firewall, iptables)</li>
+                <li>Monitorización de accesos</li>
+                <li>Copias de seguridad de configuración</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h2>🔄 Comparativa Windows Server vs Linux</h2>
+        <table class="comparison-table">
+            <tr>
+                <th>Característica</th>
+                <th>Windows Server</th>
+                <th>Linux</th>
+            </tr>
+            <tr>
+                <td>Servicio de directorio</td>
+                <td>Active Directory</td>
+                <td>OpenLDAP/Samba</td>
+            </tr>
+            <tr>
+                <td>Compartición archivos</td>
+                <td>Carpetas compartidas</td>
+                <td>Samba/NFS</td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td>Kerberos/NTLM</td>
+                <td>PAM/LDAP</td>
+            </tr>
+            <tr>
+                <td>Interfaz</td>
+                <td>GUI (Graphical User Interface)</td>
+                <td>CLI (Command Line Interface)</td>
+            </tr>
+            <tr>
+                <td>Coste</td>
+                <td>Licencias necesarias</td>
+                <td>Software libre</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="skills-section">
+        <h2>💡 Habilidades Adquiridas</h2>
+        <div>
+            <span class="badge">Administrar usuarios en red</span>
+            <span class="badge">Configurar servicios de directorio</span>
+            <span class="badge">Gestionar permisos compartidos</span>
+            <span class="badge">Implementar autenticación centralizada</span>
+            <span class="badge">Solucionar problemas de acceso</span>
+            <span class="badge">Trabajar con Active Directory</span>
+            <span class="badge">Configurar OpenLDAP</span>
+            <span class="badge">Administrar servicios de red</span>
+        </div>
+    </div>
+
+    <p><em>Este módulo es esencial para administrar entornos corporativos y prepara para módulos avanzados como
+            <strong>Servicios en Red</strong> e <strong>Implantación de Sistemas Operativos</strong>. Proporciona la
+            base para certificaciones como MCSA o LPIC.</em></p>
+</body>
+
+</html>

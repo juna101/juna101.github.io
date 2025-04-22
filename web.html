@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen - Aplicaciones Web</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --web-orange: #ff7043;
+            --cms-purple: #8e24aa;
+            --db-blue: #42a5f5;
+            --tool-teal: #26a69a;
+            --dark-bg: #424242;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Juna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="montaje.html">Montaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemas.html">SO Monopuesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofimatica.html">Ofimática</a></li>
+                    <li class="nav-item"><a class="nav-link" href="redes.html">Redes Locales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="red_sistemas.html">SO en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguridad.html">Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios en Red</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web.html">Aplicaciones Web</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menú navegación -->
+
+    <header>
+        <h1>Módulo: Aplicaciones Web</h1>
+        <p><strong>Código:</strong> 0023 (Orden 7 julio 2009, Junta de Andalucía)</p>
+    </header>
+    <div class="tech-card">
+        <h2>🌐 Tecnologías Web Fundamentales</h2>
+
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-title">Front-end</div>
+                <ul>
+                    <li>HTML5 y CSS3</li>
+                    <li>JavaScript básico</li>
+                    <li>Bootstrap/Materialize</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-title">Back-end</div>
+                <ul>
+                    <li>PHP (sintaxis básica)</li>
+                    <li>MySQL/MariaDB</li>
+                    <li>APIs REST básicas</li>
+                    <li>Autenticación y sesiones</li>
+                </ul>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-title">Protocolos Web</div>
+                <ul>
+                    <li>HTTP/HTTPS</li>
+                    <li>Métodos (GET, POST, etc.)</li>
+                    <li>Códigos de estado</li>
+                    <li>Cookies y headers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-section">
+        <h2>🛠️ Entornos de Prácticas</h2>
+        <div>
+            <span class="tool-badge">Máquinas Virtuales</span>
+            <span class="tool-badge">Docker</span>
+            <span class="tool-badge">XAMPP/WAMP</span>
+            <span class="tool-badge">Laragon</span>
+            <span class="tool-badge">Git</span>
+        </div>
+
+        <div class="practice-example">
+            <h3>Ejemplo con Docker (LAMP stack):</h3>
+            <pre>
+# Servicio web con Apache y PHP
+docker run -d -p 80:80 -v ./miweb:/var/www/html --name web php:8.0-apache
+
+# Servicio MySQL
+docker run -d -p 3306:3306 --name db -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=miweb mysql:5.7
+
+# Conectar servicios
+docker network create web-network
+docker network connect web-network web
+docker network connect web-network db</pre>
+
+            <h3>Ejemplo con XAMPP:</h3>
+            <p>Instalación de WordPress en XAMPP:</p>
+            <ol>
+                <li>Descargar WordPress y extraer en htdocs</li>
+                <li>Crear base de datos desde phpMyAdmin</li>
+                <li>Seguir el asistente de instalación</li>
+                <li>Configurar wp-config.php</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="tech-card">
+        <h2>📝 Gestores de Contenido (CMS)</h2>
+
+        <div class="cms-grid">
+            <div class="cms-card">
+                <div class="cms-icon">📝</div>
+                <h3>WordPress</h3>
+                <ul>
+                    <li>Instalación y configuración</li>
+                    <li>Plugins esenciales</li>
+                    <li>Personalización de temas</li>
+                </ul>
+            </div>
+
+            <div class="cms-card">
+                <div class="cms-icon">🛒</div>
+                <h3>PrestaShop</h3>
+                <ul>
+                    <li>Tiendas online</li>
+                    <li>Gestión de productos</li>
+                    <li>Pasarelas de pago</li>
+                </ul>
+            </div>
+
+            <div class="cms-card">
+                <div class="cms-icon">👥</div>
+                <h3>Joomla!</h3>
+                <ul>
+                    <li>Estructura de contenidos</li>
+                    <li>Componentes y módulos</li>
+                    <li>Gestión de usuarios</li>
+                </ul>
+            </div>
+
+            <div class="cms-card">
+                <div class="cms-icon">📊</div>
+                <h3>Moodle</h3>
+                <ul>
+                    <li>Plataforma e-learning</li>
+                    <li>Cursos y lecciones</li>
+                    <li>Gestión de alumnos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="db-section">
+        <h2>🗃️ Bases de Datos para Web</h2>
+        <ul>
+            <li><strong>MySQL/MariaDB</strong>: Consultas básicas, usuarios y permisos</li>
+            <li><strong>phpMyAdmin</strong>: Administración gráfica</li>
+            <li><strong>Backups</strong>: Exportación/importación de bases de datos</li>
+            <li><strong>Optimización</strong>: Índices, consultas eficientes</li>
+        </ul>
+
+        <h3>Ejemplo de consulta SQL:</h3>
+        <pre>
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO usuarios (nombre, email) 
+VALUES ('Juan Pérez', 'juan@example.com');</pre>
+    </div>
+
+    <div class="tech-card">
+        <h2>💡 Habilidades Adquiridas</h2>
+        <div class="skills-container">
+            <span class="skill-chip">Instalar y configurar entornos web</span>
+            <span class="skill-chip">Desplegar CMS populares</span>
+            <span class="skill-chip">Gestionar bases de datos MySQL</span>
+            <span class="skill-chip">Trabajar con contenedores Docker</span>
+            <span class="skill-chip">Configurar XAMPP/WAMP</span>
+            <span class="skill-chip">Personalizar plantillas CMS</span>
+            <span class="skill-chip">Resolver problemas comunes</span>
+            <span class="skill-chip">Documentar instalaciones</span>
+        </div>
+    </div>
+
+    <p><em>Este módulo proporciona la base para certificaciones como <strong>Certified WordPress Professional</strong> y
+            es fundamental para roles como <strong>Administrador de Sistemas Web</strong> o <strong>Desarrollador
+                Back-end</strong>.</em></p>
+</body>
+
+</html>
